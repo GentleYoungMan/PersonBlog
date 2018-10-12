@@ -1,0 +1,30 @@
+html{
+    height:100%;
+}
+.maininfo{
+    width:200px;
+    height:905px;
+    overflow:hidden;
+    margin-left: 20em;
+   background-color: rgb(18, 23, 29);
+}
+
+.basicinfo{
+    width:200px;
+    height:250px;
+    border-bottom:1px solid rgb(39, 44, 48);
+}
+/**
+设置图片样式
+*/
+.basicinfo img{
+  margin-left: 50px;
+  margin-top:25px;
+  width:100px;
+  height: 100px;
+}
+h5{
+    color:white;
+    margin-left: 55px;
+}
+

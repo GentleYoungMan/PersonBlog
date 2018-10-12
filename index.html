@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+    <script src="./js/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p>{{ message }}</p>
+        <div v-html="message"></div>
+
+       
+    </div>
+    <div id="vue_det">
+        <h1>
+            site:{{site}}
+        </h1>
+        <h2>
+            url:{{url}}
+        </h2>
+        <h1>{{details()}}</h1>
+    </div>
+
+    <script>
+        var data = { message: "hello world", a: "test" };
+
+        var vm = new Vue({
+            el: "#app",
+            data: data
+
+        })
+
+    </script>
+    <script>
+        var vm2 = new Vue({
+            el: "#vue_det",
+            data: {
+                site: "菜鸟教程",
+                url: "www.baidu.com",
+                alexa: "10000"
+            },
+            methods: {
+                details: function () {
+                    return this.site + "-学的不仅是技术，更是梦想"
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
